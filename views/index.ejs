@@ -30,6 +30,7 @@
 
   <% if (production) { %>
   <link rel="stylesheet" type="text/css" href="resources/ws.min.css?_=<%=production%>" />
+  <link rel="stylesheet" type="text/css" href="styles/severe-weather-breakin.css" />
   <script type="text/javascript" src="resources/vendor.min.js?_=<%=production%>"></script>
   <script type="text/javascript" src="resources/index.min.js?_=<%=production%>"></script>
   <script type="text/javascript" src="resources/displays.min.js?_=<%=production%>"></script>
@@ -46,7 +47,9 @@
   </script>
   <script type="text/javascript" src="scripts/vendor/auto/swiped-events.js"></script>
   <script type="text/javascript" src="scripts/vendor/auto/suncalc.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/severe-weather-breakin.css" />
   <script type="module" src="scripts/modules/hazards.mjs"></script>
+  <script type="module" src="scripts/modules/severe-weather-breakin.mjs"></script>
   <script type="module" src="scripts/modules/currentweatherscroll.mjs"></script>
   <script type="module" src="scripts/modules/currentweather.mjs"></script>
   <script type="module" src="scripts/modules/almanac.mjs"></script>
@@ -136,6 +139,7 @@
           <%- include('partials/hazards.ejs') %>
         </div>
         <%- include('partials/scroll.ejs') %>
+        <%- include('partials/severe-weather-breakin.ejs') %>
       </div>
     </div>
     <div id="divTwcBottom">
@@ -172,7 +176,7 @@
     <br />
 
     <div class="info">
-      <a href="https://github.com/netbymatt/ws4kp#weatherstar-4000">More information</a>
+      <a href="https://github.com/mclarty/ws4kp">More information</a>
     </div>
     <div class="media"></div>
 
