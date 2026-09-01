@@ -287,6 +287,11 @@ const init = () => {
 			['si', 'Metric'],
 		],
 	});
+	settings.warningBreakIn = new Setting('warningBreakIn', {
+		name: 'Warning break-in (red screen)',
+		defaultValue: true,
+		sticky: true,
+	});
 	settings.refreshTime = new Setting('refreshTime', {
 		type: 'select',
 		defaultValue: 600_000,
