@@ -1,0 +1,50 @@
+#severe-weather-breakin {
+	display: none;
+	position: absolute;
+	inset: 0;
+	z-index: 40;
+	background: rgb(112, 35, 35);
+	color: #fff;
+	font-family: "Star4000";
+}
+#severe-weather-breakin.show {
+	display: block;
+}
+#severe-weather-breakin .breakin-frame {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 18px 36px 12px;
+	box-sizing: border-box;
+}
+#severe-weather-breakin .breakin-banner,
+#severe-weather-breakin .breakin-footer {
+	font-family: "Star4000 Small";
+	font-size: 24px;
+	letter-spacing: 3px;
+	text-align: center;
+}
+#severe-weather-breakin .breakin-event {
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 8px 0 14px;
+}
+#severe-weather-breakin .breakin-scroll-window {
+	flex: 1;
+	overflow: hidden;
+	position: relative;
+}
+#severe-weather-breakin .breakin-text {
+	font-size: 28px;
+	line-height: 1.25;
+	text-transform: uppercase;
+	will-change: transform;
+	backface-visibility: hidden;
+}
+#container.breakin-active > .weather-display {
+	visibility: hidden;
+}
+#container > .scroll.warning-breakin {
+	background-color: rgb(112, 35, 35);
+}
